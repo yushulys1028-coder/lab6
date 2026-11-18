@@ -46,8 +46,71 @@
 </nav>
 
     <main class="container py-4">
-        <h1>Contact Us</h1>
-        <p>Share your favourite girl in red album and song.</p>
+    <h1>Contact Us</h1>
+    <p>Share your favourite girl in red album and tell us which song you love most.</p>
+
+    <form action="contact.html" method="get">
+        <div class="row g-4">
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label class="form-label" for="first-name">First name</label>
+                    <input class="form-control" type="text"
+                        id="first-name" name="first-name" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label class="form-label" for="last-name">Last name</label>
+                    <input class="form-control" type="text"
+                        id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email"
+                        id="email" name="email"
+                        placeholder="name@example.com" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label class="form-label" for="album">Favourite album</label>
+                    <select class="form-control" id="album" name="album" required>
+                        <option value="" selected disabled>Choose an album</option>
+                        <option value="blue">blue</option>
+                        <option value="doing-it-again">I'M DOING IT AGAIN BABY!</option>
+                        <option value="if-i-could">if i could make it go quiet</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label class="form-label" for="message">Your message</label>
+                    <textarea class="form-control" id="message"
+                        name="message" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <input class="check" type="checkbox"
+                        id="consent" name="consent" value="yes" required>
+                    <label for="consent">I agree to be contacted about my message.</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn-solid theme-primary" type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
     </main>
 
     <footer class="container py-4 mt-5">
