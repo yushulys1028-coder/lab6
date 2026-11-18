@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light;
+    --site-blue: #12378a;
+    --site-red: #b51f3c;
+    --bs-primary-base: var(--site-blue);
+    --bs-primary-bg: var(--site-blue);
+    --bs-primary-fg: var(--site-blue);
+    --bs-primary-fg-emphasis: var(--site-blue);
+    --bs-primary-bg-subtle: #edf1fb;
+    --bs-primary-bg-muted: #dce4f7;
+    --bs-primary-border: #849acb;
+    --bs-primary-focus-ring: rgba(18, 55, 138, 0.4);
+    --bs-primary-contrast: white;
+}
+body { background-color: #f4f3f7; color: var(--site-blue); font-family: Arial, sans-serif; }
+.navbar-brand, h1, h2, .card-title, .dialog-title { color: var(--site-red); font-family: Georgia, serif; font-weight: bold; }
+.nav-link { color: var(--site-blue); }
+.nav-link.active, .nav-link:hover, .navbar-brand:hover { color: var(--site-red); }
+.card, .dialog, .drawer { background-color: white; color: var(--site-blue); }
+footer { border-top: 2px solid var(--site-red); }
+.btn-solid.theme-primary {
+    color: white;
+    background: var(--site-blue);
+    border-color: var(--site-blue);
+}
+.btn-solid.theme-primary:hover, .btn-solid.theme-primary:active {
+    background: var(--site-red);
+    border-color: var(--site-red);
+}
